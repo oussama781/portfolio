@@ -48,7 +48,7 @@ export const experiences = [
     role: "Développeur Full Stack – Stage",
     company: "SQLI",
     location: "Rabat",
-    date: "Avril 2023",
+    date: "Juillet 2023 – Août 2023",
     description: "Développement d'une application de gestion des dossiers médicaux.",
     technologies: ["JAVA SPRING", "PostgreSQL", "React.js"]
   },
