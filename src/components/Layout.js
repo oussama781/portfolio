@@ -83,14 +83,16 @@ export default function Layout({ children }) {
             </motion.button>
 
             <motion.a
-              href={personalInfo.resume}
-              download
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="border border-cyan-400 px-4 py-2 rounded-lg text-sm hover:bg-cyan-400 hover:text-[#0a0e13] dark:hover:text-[#0a0e13] transition whitespace-nowrap text-cyan-400 dark:text-cyan-400 font-medium"
-            >
-              Resume
-            </motion.a>
+  href={personalInfo.resume}
+  download="CV_TAIDI_Oussama.pdf" // 👈 Aligne-le avec le même nom de fichier
+  target="_blank"                 // 👈 Évite les conflits de routage sur Vercel
+  rel="noopener noreferrer"
+  initial={{ opacity: 0, x: 20 }}
+  animate={{ opacity: 1, x: 0 }}
+  className="border border-cyan-400 px-4 py-2 rounded-lg text-sm hover:bg-cyan-400 hover:text-[#0a0e13] dark:hover:text-[#0a0e13] transition whitespace-nowrap text-cyan-400 dark:text-cyan-400 font-medium"
+>
+  Resume
+</motion.a>
           </div>
         </div>
       </header>

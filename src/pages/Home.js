@@ -48,12 +48,14 @@ export default function Home() {
                 <FaArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <a
-                href={personalInfo.resume}
-                download
-                className="flex items-center justify-center gap-2 border-2 border-cyan-400 text-cyan-400 dark:text-cyan-400 px-8 py-4 rounded-lg font-semibold hover:bg-cyan-400/10 transition-all"
-              >
-                Download Resume
-              </a>
+  href={personalInfo.resume}
+  download="CV_TAIDI_Oussama.pdf" // 👈 Ajoute le nom exact ici pour forcer le bon format sur Vercel
+  target="_blank"                 // 👈 Ouvre proprement pour éviter le conflit de routage
+  rel="noopener noreferrer"
+  className="flex items-center justify-center gap-2 border-2 border-cyan-400 text-cyan-400 dark:text-cyan-400 px-8 py-4 rounded-lg font-semibold hover:bg-cyan-400/10 transition-all"
+>
+  Download Resume
+</a>
             </motion.div>
           </motion.div>
         </div>

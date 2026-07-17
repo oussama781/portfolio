@@ -148,18 +148,21 @@ export default function Contact() {
           })}
 
           {/* Download Resume */}
-          <motion.a
-            href={personalInfo.resume}
-            download
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3 }}
-            whileHover={{ scale: 1.02 }}
-            className="flex items-center justify-center gap-3 p-6 bg-cyan-500/20 border-2 border-cyan-400 rounded-xl hover:bg-cyan-500/30 transition-all group backdrop-blur-sm"
-          >
-            <FaDownload className="text-cyan-400 group-hover:translate-y-1 transition-transform" />
-            <span className="font-semibold text-cyan-400">Télécharger mon CV</span>
-          </motion.a>
+         {/* Download Resume */}
+<motion.a
+  href={personalInfo.resume}
+  download="CV_TAIDI_Oussama.pdf" // 👈 Donne un nom explicite avec l'extension .pdf ici
+  target="_blank"                 // 👈 Sécurité supplémentaire pour forcer l'ouverture/téléchargement propre
+  rel="noopener noreferrer"       // 👈 Bonne pratique de sécurité avec target="_blank"
+  initial={{ opacity: 0, x: -20 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ delay: 0.3 }}
+  whileHover={{ scale: 1.02 }}
+  className="flex items-center justify-center gap-3 p-6 bg-cyan-500/20 border-2 border-cyan-400 rounded-xl hover:bg-cyan-500/30 transition-all group backdrop-blur-sm pointer-events-auto"
+>
+  <FaDownload className="text-cyan-400 group-hover:translate-y-1 transition-transform" />
+  <span className="font-semibold text-cyan-400">Télécharger mon CV</span>
+</motion.a>
         </motion.div>
 
         {/* Contact Form */}
