@@ -161,6 +161,14 @@ export const projects = [
     technologies: ["FastAPI", "React.js", "PostgreSQL"],
     objective: "Automatiser la gestion et la confirmation des messages WhatsApp",
     result: "Dashboard opérationnel avec automatisation complète"
+  },
+  {
+    title: "Plateforme E-commerce & Boutique en Ligne – ELORIA",
+    description: "Développement complet d'une boutique en ligne épurée et moderne pour la marque de bijoux et accessoires ELORIA, optimisée pour le commerce électronique au Maroc.",
+    technologies: ["React.js", "Tailwind CSS", "Node.js"], // À ajuster selon ta stack réelle
+    objective: "Créer une vitrine fluide, rapide et optimisée pour la conversion et le paiement à la livraison (COD)",
+    result: "Boutique entièrement responsive, parcours client simplifié et tunnel d'achat optimisé pour mobile",
+    demo: "https://www.eloriaofficiel.store/"
   }
 ];
 

@@ -107,14 +107,29 @@ export default function Work() {
 
             {/* Action Buttons */}
             <div className="flex gap-4 pt-4 border-t border-gray-200 dark:border-white/10">
-              <button className="flex items-center gap-2 px-4 py-2 bg-cyan-500/20 text-cyan-400 dark:text-cyan-400 rounded-lg hover:bg-cyan-500/30 transition text-sm font-medium">
-                <FaGithub className="text-sm" />
-                Code
-              </button>
-              <button className="flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-white/20 text-gray-600 dark:text-gray-400 rounded-lg hover:border-cyan-400 hover:text-cyan-400 dark:hover:text-cyan-400 transition text-sm font-medium">
-                <FaExternalLinkAlt className="text-sm" />
-                Demo
-              </button>
+              {project.github && (
+                <a 
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 bg-cyan-500/20 text-cyan-400 dark:text-cyan-400 rounded-lg hover:bg-cyan-500/30 transition text-sm font-medium"
+                >
+                  <FaGithub className="text-sm" />
+                  Code
+                </a>
+              )}
+              
+              {project.demo && (
+                <a 
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-white/20 text-gray-600 dark:text-gray-400 rounded-lg hover:border-cyan-400 hover:text-cyan-400 dark:hover:text-cyan-400 transition text-sm font-medium"
+                >
+                  <FaExternalLinkAlt className="text-sm" />
+                  Demo
+                </a>
+              )}
             </div>
           </motion.div>
         ))}
