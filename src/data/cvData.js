@@ -7,7 +7,7 @@ export const personalInfo = {
   linkedin: "https://www.linkedin.com/in/oussama-taidi-a933b2245/",
   tagline: "I design and build secure, scalable web applications using Java, Spring Boot, FastAPI and React.",
   profileImage: "/profile.png",
-  resume: "/cv_taidi_oussama.pdf"
+  resume: "/cvtaidioussama.pdf"
 };
 
 export const latestExperience = {
